@@ -13,8 +13,10 @@ namespace SOSSE
 {
     public partial class MainForm : Form
     {
-        private const long saveLength = 0x51FB8;
-        private const int headerLength = 0x48;
+        //Decompressed LZ11 data size 
+        private const long saveLength = 0x38340;
+        //SoS header length is 48h, ToT header length is F8h
+        private const int headerLength = 0xF8;
 
         // Save
         public static byte[] Header;
